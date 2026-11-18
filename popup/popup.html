@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="off" class="warn" hidden>Site Proxy is switched off.</div>
+
+  <div id="host" class="host"></div>
+  <div id="status" class="status"></div>
+
+  <div id="addForm" hidden>
+    <label for="domain">Entry</label>
+    <input id="domain" type="text" spellcheck="false">
+    <div id="error" class="error" hidden></div>
+  </div>
+
+  <div class="buttons">
+    <button id="always" hidden>Proxy always</button>
+    <button id="temp" hidden>Proxy until restart</button>
+    <button id="remove" hidden>Remove</button>
+  </div>
+
+  <div class="footer"><a href="#" id="settings">Settings…</a></div>
+
+  <script src="../common.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+:root { color-scheme: light dark; }
+body {
+  font: 13px system-ui, sans-serif;
+  width: 260px;
+  margin: 0;
+  padding: 10px 12px;
+}
+.host { font-weight: 600; word-break: break-all; }
+.status { margin: 2px 0 10px; opacity: 0.8; }
+.status.proxied { color: #e66000; opacity: 1; }
+label { display: block; font-size: 11px; opacity: 0.7; margin-bottom: 2px; }
+input { width: 100%; box-sizing: border-box; padding: 4px 6px; font: inherit; }
+.buttons { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
+button { padding: 5px 8px; font: inherit; cursor: pointer; }
+.error { color: #d70022; font-size: 12px; margin-top: 4px; }
+.warn { background: #ffe900; color: #000; padding: 4px 6px; margin-bottom: 8px; border-radius: 3px; }
+.footer { margin-top: 10px; text-align: right; font-size: 12px; }

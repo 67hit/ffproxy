@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Site Proxy",
+  "version": "1.0.0",
+  "description": "Route selected sites (and everything their pages load) through a local HTTP proxy.",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "site-proxy@personal.addon",
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
+  "permissions": ["proxy", "storage", "tabs", "<all_urls>"],
+
+  "background": {
+    "scripts": ["common.js", "background.js"],
+    "persistent": true
+  },
+
+  "browser_action": {
+    "default_icon": "icons/direct.svg",
+    "default_title": "Site Proxy",
+    "default_popup": "popup/popup.html"
+  },
+
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+
+  "icons": {
+    "48": "icons/proxy.svg",
+    "96": "icons/proxy.svg"
+  }
+}
